@@ -9,14 +9,14 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className="container">
         <p className="text-muted">
-          © {currentYear} Gametis, all rights reserved.
+          © {currentYear} Elbikri World
         </p>
         <p className={styles.created}>
-          Created with{" "}
+          Créee avec{" "}
           <span>
             <AiFillHeart className={styles.heart} />
           </span>{" "}
-          by Indra
+          by Sarah CERT2
         </p>
       </div>
     </footer>

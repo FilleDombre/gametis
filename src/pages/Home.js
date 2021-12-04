@@ -38,10 +38,10 @@ const Home = () => {
       <section>
         <div className="text-center">
           <h1 className="title">
-            Best Free to Play Games for PC and Browser in {currentYear}!
+            Découvre les jeux de Sarah Elbikri de {currentYear}!
           </h1>
           <p className="text-muted subtitle">
-            {allGames && allGames.length} free-to-play games found in our list!
+            {allGames && allGames.length} Jeux gratuits bien sûr !
           </p>
         </div>
         <form className={styles.form}>
@@ -56,7 +56,7 @@ const Home = () => {
           </label>
         </form>
         {debouncedSearchTerm && filteredGames.length === 0 && (
-          <p className="text-center">Sorry, no games found :(</p>
+          <p className="text-center">Désolé mon ami, pas de jeux trouvés :(</p>
         )}
       </section>
 

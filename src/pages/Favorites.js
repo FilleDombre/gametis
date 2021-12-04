@@ -10,9 +10,9 @@ const Favorites = () => {
 
   return (
     <section className={styles.favorite}>
-      <h1 className="title">Your Favorite Games</h1>
+      <h1 className="title">Vos jeux favoris</h1>
       {totalFavorites === 0 ? (
-        <p className={styles.feedback}>No favorite games yet!</p>
+        <p className={styles.feedback}>Pas encore de jeux favoris !</p>
       ) : (
         <GameList items={favorites} />
       )}

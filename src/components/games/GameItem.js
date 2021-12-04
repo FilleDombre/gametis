@@ -28,12 +28,12 @@ const GameItem = ({ item: game }) => {
             {game.platform.includes("PC (Windows)") ? (
               <AiFillWindows
                 className={styles.platform_icon}
-                title="Available on Windows"
+                title="Disponible sur Windows"
               />
             ) : (
               <GoBrowser
                 className={styles.platform_icon}
-                title="Available on Browser"
+                title="Disponible sur Browser"
               />
             )}
           </div>
@@ -42,8 +42,8 @@ const GameItem = ({ item: game }) => {
             className={styles.btn}
             title={
               gameIsFavorite(game.id)
-                ? "Remove from favorites"
-                : "Add to favorites"
+                ? "Supprimer des favoris"
+                : "Ajouter aux favoris"
             }
           >
             <AiFillHeart

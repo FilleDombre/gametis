@@ -21,7 +21,7 @@ const Header = () => {
                 to="/"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
               >
-                Home
+                Accueil
               </NavLink>
             </li>
             <li>
@@ -29,7 +29,7 @@ const Header = () => {
                 to="popular"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
               >
-                Popular
+                Populaire
               </NavLink>
             </li>
             <li>
@@ -37,7 +37,7 @@ const Header = () => {
                 to="favorites"
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
               >
-                Favorites
+                Favoris
               </NavLink>
             </li>
           </ul>

@@ -18,7 +18,7 @@ const BottomBar = () => {
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             <IoGameController className={styles.icon} />
-            <span>Home</span>
+            <span>Accueil</span>
           </NavLink>
         </li>
         <li>
@@ -27,7 +27,7 @@ const BottomBar = () => {
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             <IoTrendingUp className={styles.icon} />
-            <span>Popular</span>
+            <span>Populaire</span>
           </NavLink>
         </li>
         <li>
@@ -36,7 +36,7 @@ const BottomBar = () => {
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             <IoHeart className={styles.icon} />
-            <span>Favorites</span>
+            <span>Favoris</span>
           </NavLink>
         </li>
       </ul>

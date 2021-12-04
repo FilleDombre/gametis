@@ -37,21 +37,21 @@ const Popular = () => {
   return (
     <section className={styles.popular}>
       <h1 className="title">
-        Top 10 Free{" "}
+        Top 10 Gratuit{" "}
         <span className={styles.lead}>
           {selectedCategory ? selectedCategory : "To Play"}
         </span>{" "}
-        Games for PC and Browser in {currentMonth} {currentYear}
+        des jeux sur et navigateur en {currentMonth} {currentYear}
       </h1>
 
       <div className={styles.filter}>
-        <label htmlFor="category">More Top 10's:</label>
+        <label htmlFor="category">Le Top 10's:</label>
         <select
           defaultValue="Select Category"
           id="category"
           onChange={(e) => setSelectedCategory(e.target.value)}
         >
-          <option disabled>Select Category</option>
+          <option disabled>Selectionnez Catégorie</option>
           {categories.map((category) => (
             <option key={category} value={category}>
               Top {category}

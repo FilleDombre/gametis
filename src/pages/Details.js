@@ -33,29 +33,29 @@ const Details = () => {
             src={game.thumbnail}
             alt={game.title}
           />
-          <h1 className={styles.title}>About {game.title}</h1>
+          <h1 className={styles.title}>A propos {game.title}</h1>
           {game.description.split(/(\r\n|\r|\n)/gi).map((paragraph, idx) => (
             <p key={idx} style={{ margin: "20px 0", fontSize: "15px" }}>
               {paragraph}
             </p>
           ))}
 
-          <h3>Additional Information</h3>
+          <h3>Information supplémentaire</h3>
           <ul className={styles.info_list}>
             <li>
-              <span className="text-muted">Title</span>
+              <span className="text-muted">Titre</span>
               <p>{game.title}</p>
             </li>
             <li>
-              <span className="text-muted">Developer</span>
+              <span className="text-muted">Developeur</span>
               <p>{game.developer}</p>
             </li>
             <li>
-              <span className="text-muted">Publisher</span>
+              <span className="text-muted">Publieur</span>
               <p>{game.publisher}</p>
             </li>
             <li>
-              <span className="text-muted">Release Date</span>
+              <span className="text-muted">Date de sortie</span>
               <p>{game.release_date}</p>
             </li>
             <li>
@@ -75,7 +75,7 @@ const Details = () => {
             </li>
           </ul>
 
-          {game?.screenshots && <h3>{game.title} Screenshots</h3>}
+          {game?.screenshots && <h3>{game.title} Photos</h3>}
           {game?.screenshots && (
             <div className={styles.screenshot_grid}>
               {game?.screenshots?.map(({ image }) => (
@@ -87,7 +87,7 @@ const Details = () => {
           )}
 
           {game?.minimum_system_requirements && (
-            <h3>Minimum System Requirements (Windows)</h3>
+            <h3>Systèmes d'exploitation minimum (Windows)</h3>
           )}
           {game?.minimum_system_requirements && (
             <ul className={styles.info_list}>
@@ -96,19 +96,19 @@ const Details = () => {
                 <p>{game.minimum_system_requirements.os}</p>
               </li>
               <li>
-                <span className="text-muted">Processor</span>
+                <span className="text-muted">Processeur</span>
                 <p>{game.minimum_system_requirements.processor}</p>
               </li>
               <li>
-                <span className="text-muted">Memory</span>
+                <span className="text-muted">Memoire</span>
                 <p>{game.minimum_system_requirements.memory}</p>
               </li>
               <li>
-                <span className="text-muted">Graphics</span>
+                <span className="text-muted">Graphiques</span>
                 <p>{game.minimum_system_requirements.graphics}</p>
               </li>
               <li>
-                <span className="text-muted">Storage</span>
+                <span className="text-muted">Stockage</span>
                 <p>{game.minimum_system_requirements.storage}</p>
               </li>
             </ul>
@@ -119,8 +119,8 @@ const Details = () => {
             className={`btn ${styles.btn_favorite}`}
             title={
               gameIsFavorite(game.id)
-                ? "Remove from favorites"
-                : "Add to favorites"
+                ? "Supprimer des favoris"
+                : "Ajouter aux favoris"
             }
           >
             <AiFillHeart
