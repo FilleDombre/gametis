@@ -14,7 +14,7 @@ function App() {
      <Layout>
       <Routes>
         <Route path="/" element={<Connexion />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="home" element={<Home />} />
         <Route path="popular" element={<Popular />} />
         <Route path="favorites" element={<Favorites />} />
         <Route path="games/:id" element={<Details />} />
