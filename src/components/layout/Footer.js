@@ -1,6 +1,6 @@
 import { AiFillHeart } from "react-icons/ai";
 // styles
-import styles from "./Footer.module.css";
+  import styles from "./Footer.module.css";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

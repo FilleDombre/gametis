@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { IoGameController, IoTrendingUp, IoHeart } from "react-icons/io5";
 
 // styles
-import styles from "./BottomBar.module.css";
+ import styles from "./BottomBar.module.css";
 
 const BottomBar = () => {
   const activeStyle = {

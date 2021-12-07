@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { IoGameController } from "react-icons/io5";
 // styles
-import styles from "./Header.module.css";
+ import styles from "./Header.module.css";
 
 const Header = () => {
   const activeStyle = {
