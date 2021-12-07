@@ -1,13 +1,7 @@
-import { useState, useEffect } from "react";
-import { BiSearch } from "react-icons/bi";
-import { useFetch } from "../hooks/useFetch";
-import { useDebounce } from "../hooks/useDebounce";
-import { NavLink } from "react-router-dom";
+
 // styles
 import  "./Connexion.css";
 
-import GameList from "../components/games/GameList";
-import Spinner from "../components/ui/Spinner";
 
 const Connexion = () => {
   // const [filteredGames, setFilteredGames] = useState([]);
@@ -65,8 +59,8 @@ const Connexion = () => {
             <input type="submit"  onClick={onSubmit} defaultValue="Connexion" />
           
           </div>
-          <p className="forget">Mot de passe oublié ?<a href="#">Cliquez ici</a></p>
-          <p className="forget">Pas de compte ? ?<a href="#">S'enregistrer</a></p>
+          <p className="forget">Mot de passe oublié ? Cliquez ici</p>
+          <p className="forget">Pas de compte ? ? S'enregistrer</p>
         </form>
       </div>
     </div>
