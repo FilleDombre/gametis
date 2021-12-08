@@ -33,7 +33,7 @@ const Connexion = () => {
     // });
     <NavLink
                 to="/"
-                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                
               >
                 Accueil
               </NavLink>
