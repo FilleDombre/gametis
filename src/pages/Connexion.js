@@ -66,7 +66,10 @@ const Connexion = () => {
           
           </div>
           <p className="forget">Mot de passe oublié ? Cliquez ici</p>
-          <p className="forget">Pas de compte ? ? S'enregistrer</p>
+          <p className="forget">Pas de compte ?  <NavLink
+                to="/inscription" >
+                S'enregistrer
+              </NavLink></p>
         </form>
       </div>
     </div>
