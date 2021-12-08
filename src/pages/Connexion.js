@@ -1,4 +1,4 @@
-
+import { NavLink } from "react-router-dom";
 // styles
 import  "./Connexion.css";
 
@@ -31,7 +31,12 @@ const Connexion = () => {
     // this.setState({
     //   showName: true
     // });
-    window.location.href = "/popular";
+    <NavLink
+                to="/"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
+                Accueil
+              </NavLink>
   }
   return (
     <>
