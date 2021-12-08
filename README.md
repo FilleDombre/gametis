@@ -1,37 +1,21 @@
-<h1 align="center">Gametis</h1>
+Vous devez avoir node.js installé sur votre ordinateur
 
-Gametis adalah sebuah aplikasi web sederhana untuk mencari game gratis yg keren dan menarik yang dapat di mainkan di platform PC & Browser. User Interface (UI) nya simple, elegan, modern dan responsive.
+Une fois fait, dans la racine de ce projet, lancez les commandes suivantes
 
-![screenshot](https://i.ibb.co/ZdM3H0h/gametis.png)
+npm install
 
-## How To Use
+ensuite
 
-Untuk mengkloning dan menjalankan aplikasi ini, pastikan bahwa [Git](https://git-scm.com) dan [Node.js](https://nodejs.org/en/download/) sudah terinstal di komputer anda, lalu jalankan command line berikut:
+npm start
 
-```bash
-# Clone this repository
-$ git clone https://github.com/indraAK/gametis.git
+Votre application devrait souvrir dans le navigateur à l'url suivante : localhost:3000
 
-# Install dependencies
-$ npm install
+En cas d'erreur babel loader dans votre console :
+supprimer le fichier package.json et le dossier node_module
+Et relancer les commandes npm i puis npm start
 
-# Run the app
-$ npm start
-```
+Si toute fois vous avez des problèmes pour le lancer,
 
-## User Stories
+J'ai déployé l'application sur l'hébergeur netlify à l'url suivante :
 
-1. As a user, user bisa melihat semua list game gratis yg tersedia di halaman "Home".
-2. As a user, user bisa mencari game dengan mengetikan keyword gamenya di form pencarian pada halaman "Home".
-3. As a user, user bisa menambahkan atau menghapus game favorit dengan mengklik icon hati.
-4. As a user, user bisa melihat Top 10 game populer di halaman "Popular".
-5. As a user, user bisa memilih opsi kategori game untuk menampilkan Top 10 game berdasarkan kategori yang di pilih di halaman "Popular".
-6. As a user, user bisa melihat list game favorit / game yg disukainya di halaman "Favorites".
-
-## Built With
-
-- React JS
-- JavaScript
-- CSS
-
-_Sumber API Games Database dari [Free-to-Play Games Database](https://rapidapi.com/digiwalls/api/free-to-play-games-database)_
+https://nifty-mcnulty-b523c3.netlify.app

@@ -31,7 +31,7 @@ const Connexion = () => {
     // this.setState({
     //   showName: true
     // });
-    window.location.href = "home";
+    window.location.href = "/popular";
   }
   return (
     <>
