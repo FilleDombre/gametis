@@ -14,7 +14,7 @@ const BottomBar = () => {
       <ul>
         <li>
           <NavLink
-            to="/"
+            to="/home"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             <IoGameController className={styles.icon} />

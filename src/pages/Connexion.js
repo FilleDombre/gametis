@@ -31,12 +31,7 @@ const Connexion = () => {
     // this.setState({
     //   showName: true
     // });
-    <NavLink
-                to="/"
-                
-              >
-                Accueil
-              </NavLink>
+ 
   }
   return (
     <>
@@ -61,7 +56,13 @@ const Connexion = () => {
             <input type="password" placeholder="Mot de passe" />
           </div>
           <div className="inputBox">
-            <input type="submit"  onClick={onSubmit} defaultValue="Connexion" />
+          <NavLink
+                to="/home"
+                
+              >
+                Se connecter
+              </NavLink>
+           
           
           </div>
           <p className="forget">Mot de passe oublié ? Cliquez ici</p>
